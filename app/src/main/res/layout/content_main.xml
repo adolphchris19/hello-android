@@ -1,0 +1,73 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- My first relativeLayout, it contains my ImageView. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/images"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
+
+    <!-- My second RelativeLayout, it contains all my four TextViews -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:text="UDACITY"
+            android:textAlignment="center"
+            android:textColor="#46211a"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:drawableLeft="@drawable/ic_action_location"
+            android:paddingTop="19dp"
+            android:textColor="#e71"
+            android:text="2465 Latham St, Mountain view, CA 94043"
+            android:textSize="15sp" />
+        <TextView
+            android:text="www.udacity.com"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/ic_action_web1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:paddingTop="19dp"
+            android:layout_below="@id/text"
+            />
+        <TextView
+            android:text="650 - 555 - 5555"
+            android:textColor="#763626"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:paddingTop="19dp"
+            android:layout_below="@id/text1"
+            />
+    </RelativeLayout>
+</LinearLayout>
